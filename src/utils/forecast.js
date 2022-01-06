@@ -8,7 +8,7 @@ const forecast = (latitude, longitude, callback) => {
             callback(error.info, undefined,undefined)
         } 
         else {
-            callback(undefined, ' It is currently ' + body.current.temperature + ' degress out. Weather will be '+body.current.weather_descriptions +". | \n Wind Speed : "+ body.current.wind_speed+ " (Km/h) ",body.current.weather_icons);
+            callback(undefined, ' It is currently ' + body.current.temperature + ' degress out. Weather will be '+body.current.weather_descriptions +". \n Wind Speed : "+ body.current.wind_speed+ " (Km/h) ",body.current.weather_icons);
         }
     })
 }
